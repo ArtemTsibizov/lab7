@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar2">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Основная информация</a>
+            <a href="./films.html" class="navbar-brand">Список фильмов</a>
+            <a href="#sidebar" class="navbar-brand"
+            data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Меню</a>
+
+
+        </div>
+    </nav>
+
+    <div class="carousel" id="carousel-id">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./pic-1.jpg" class="w-100 img-thumbnail" alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="./pic-2.jpg" class="w-100 img-thumbnail" alt="">
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="./pic-3.jpg" class="w-100 img-thumbnail" alt="">
+            </div>
+
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-id" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-id" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+
+    <div class="container-lg" style="margin-top: 20px;" id="films-card">
+        <div class="text-center">
+            <h2>Фильмы:</h2>
+        </div>
+    </div>
+
+    <div class="row my-5 align-items-center justify-content-center">
+        <div class="card" style="width: 18rem; margin-right: 10px;">
+            <img src="./film1.webp" class="card-img-top" alt="blablas">
+            <div class="card-body">
+                <h5 class="card-title">Рэмбо: Первая кровь</h5>
+                <p class="card-text">Джон Рэмбо дает отпор зарвавшемуся шерифу. Первая часть экшен-цикла о непобедимом
+                    ветеране Вьетнамской войны</p>
+                <a href="https://www.kinopoisk.ru/film/4087/" class="btn btn-primary">Смотреть на Кинопоиске</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;  margin-right: 10px;">
+            <img src="./film2.webp" class="card-img-top" alt="blablas">
+            <div class="card-body">
+                <h5 class="card-title">Рэмбо: Первая кровь 2</h5>
+                <p class="card-text">Ветеран войны вновь возвращается во Вьетнам. Сильвестр Сталлоне в блокбастере с
+                    рекордными кассовыми сборами</p>
+                <a href="https://www.kinopoisk.ru/film/6352/" class="btn btn-primary">Смотреть на Кинопоиске</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./film3.webp" class="card-img-top" alt="blablas">
+            <div class="card-body">
+                <h5 class="card-title">Рэмбо 3</h5>
+                <p class="card-text">Джон отправляется в Афганистан выручать боевого товарища. Самая разухабистая часть
+                    культовой экшен-франшизы</p>
+                <a href="https://www.kinopoisk.ru/film/8168/" class="btn btn-primary">Смотреть на Кинопоиске</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container-lg" id="actro-info">
+        <div class="text-center">
+            <h2>Информация об актёре:</h2>
+        </div>
+    </div>
+    <div class="container-lg">
+        <div class="text-left">
+            <h3>Где родился:</h3>
+            <a data-bs-toggle="collapse" href="#collapseWhereBorn" role="button" aria-expanded="false"
+                aria-controls="collapseWhereBorn">Показать/Скрыть
+            </a>
+
+        </div>
+        <div class="collapse text-center" id="collapseWhereBorn">
+            <p>Майкл Сильвестр Гарденцио Сталлоне родился 6 июля 1946 года в Нью-Йорке, США</p>
+        </div>
+
+
+    </div>
+    <div class="container-lg">
+        <div class="text-left">
+            <h3>Где учился:</h3>
+            <a data-bs-toggle="collapse" href="#collapseWhereLearn" role="button" aria-expanded="false"
+                aria-controls="collapseWhereLearn">Показать/Скрыть
+            </a>
+        </div>
+        <div class="collapse text-center" id="collapseWhereLearn">
+            <p>Учился в Академии драматического искусства в Майами.</p>
+        </div>
+
+    </div>
+    <div class="container-lg">
+        <div class="text-left">
+            <h3>Личная жизнь:</h3>
+            <a data-bs-toggle="collapse" href="#collapseFamaly" role="button" aria-expanded="false"
+                aria-controls="collapseFamaly">Показать/Скрыть
+            </a>
+        </div>
+        <div class="collapse text-center" id="collapseFamaly">
+            <p>Отец — Фрэнк Сталлоне — сицилиец. Его семья в 1932 году поселилась в США. Фрэнк был владельцем небольшой
+                сети парикмахерских.
+
+                Мать — Жаклин Лейбофиш — происходит из семьи вашингтонского адвоката Джона Лейбофиша, чьи предки-евреи в
+                конце XIX века эмигрировали в Штаты из Одессы, и француженки Жанны Клерек. Жаклин владела салоном
+                красоты и увлекалась астрологией.</p>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end"
+        tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Навигация по странице</h4>
+        </div>
+        <div class="offcanvas-body">
+            <div id="#navbar2">
+                <a href="#carousel-id" class="list-group-item">карусель</a>
+                <a href="#films-card" class="list-group-item">карточки с фильмами</a>
+                <a href="#actro-info" class="list-group-item">краткая информация об актёре</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
